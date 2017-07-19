@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+using namespace std;
+class JumpyNum {
+  int r[2][11];
+  int L,H;
+  public:
+  int howMany(int low, int high) {
+    int n = high-low+1;
+    memset(r,0,sizeof(r));
+    for (int i = 0; i < 11; ++i){
+      r[0][i] = low%10; low/=10;
+      r[1][i] = high%10; high/=10;
+    }
+    for (int i = 10; i >= 0; --i) if (r[0][i]){L=i; break;}
+    for (int i = 10; i >= 0; --i) if (r[1][i]){H=i; break;}
+    return n - notJumpy(H,0,0,0);
+  }
+  // i'th digit,
+  // current digit
+  // significant lower indicator,
+  // significant upper indicator
+  int Jumpy(int i, int d, int sl, int su){
+    if (d == 0) return 0;
+    int count = 0;
+    if (i == H) {
+      for (int j = r[0][i]; j <= r[1][i]; ++j){
+        
+      }
+    }
+  }
+};
+// BEGIN CUT HERE
+int main(){
+  JumpyNum J;
+  cout << J.howMany(9,23) << endl;
+  return 0;
+}
+// END CUT HERE

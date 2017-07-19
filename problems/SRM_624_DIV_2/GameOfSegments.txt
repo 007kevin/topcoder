@@ -1,0 +1,68 @@
+PROBLEM STATEMENT
+Rijél is a very wise teacher. He loves mathematics, especially games and 
+geometry problems. Recently one of his students challenged him to the 
+following game:
+
+Initially, there is a polygon with N vertices drawn in the plane. The polygon 
+is strictly convex, i.e., each internal angle is strictly smaller than 180 
+degrees. The vertices of the polygon are numbered 1 through N, in clockwise 
+order.
+
+Two players play the game on this polygon. The players take alternating turns. 
+In each turn, the current player chooses a diagonal or a side of the polygon 
+and draws it as a straight line segment. (A diagonal of the polygon is a line 
+segment that connects any two non-adjacent vertices of the polygon.) The 
+player is only allowed to choose a diagonal or a side that does not intersect 
+any of the previously drawn segments (it must not share endpoints with any of 
+them either). The player who cannot draw a diagonal or a side according to the 
+above rules loses the game.
+
+You are given the int N.
+
+We assume that both players play the game optimally. Return 1 if the first 
+player wins and 2 otherwise.
+
+DEFINITION
+Class:GameOfSegments
+Method:winner
+Parameters:int
+Returns:int
+Method signature:int winner(int N)
+
+
+CONSTRAINTS
+-N will be between 3 and 1,000, inclusive.
+
+
+EXAMPLES
+
+0)
+3
+
+Returns: 1
+
+This polygon has zero diagonals and three sides. The first player will always 
+win no matter which side he picks.
+
+1)
+4
+
+Returns: 1
+
+This polygon has four sides and two diagonals. The first player wins the game 
+if he takes one of the diagonals, because he will leave no choice for the 
+second player.
+
+2)
+15
+
+Returns: 2
+
+
+
+3)
+191
+
+Returns: 2
+
+
