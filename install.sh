@@ -1,3 +1,3 @@
 #!/bin/sh
-ln -sf $HOME/topcoder/topcoder.desktop $HOME/.local/share/applications
-ln -sf $HOME/topcoder/contestapplet.conf $HOME/contestapplet.conf
+ln -sf $(pwd)/topcoder.desktop $HOME/.local/share/applications
+ln -sf $(pwd)/contestapplet.conf $HOME/contestapplet.conf
