@@ -3,5 +3,5 @@
 Terminal=false
 Type=Application
 Name=Topcoder
-Exec=javaws /home/local/topcoder/ContestAppletProd.jnlp
-Icon=/home/local/topcoder/topcoder.png
+Exec=javaws /home/local/Projects/topcoder/ContestAppletProd.jnlp
+Icon=/home/local/Projects/topcoder/topcoder.png
